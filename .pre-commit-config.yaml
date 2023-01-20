@@ -17,44 +17,6 @@ repos:
       - id: shellcheck
         args: ["--severity=warning"]
 
-  - repo: https://github.com/doublify/pre-commit-rust
-    rev: v1.0
-    hooks:
-      - id: fmt
-        name: 'fmt: main'
-        args: ['--manifest-path', 'Cargo.toml', '--']
-          # TODO: consider enabling clippy
-          # - id: clippy
-          #   name: 'clippy: main'
-          #   args: ['--manifest-path', 'Cargo.toml', '--', '-D', 'warnings']
-
-  - repo: https://github.com/doublify/pre-commit-rust
-    rev: v1.0
-    hooks:
-      - id: fmt
-        name: 'fmt: pal_nrf'
-        args: ['--manifest-path', 'pal/pal_nrf/Cargo.toml', '--']
-          # TODO: consider enabling clippy
-          # - id: clippy
-          #   name: 'clippy: pal_nrf'
-          #   args: ['--manifest-path', 'pal/pal_nrf/Cargo.toml', '--', '-D', 'warnings']
-
-  - repo: https://github.com/doublify/pre-commit-rust
-    rev: v1.0
-    hooks:
-      - id: fmt
-        name: 'fmt: pal_pc'
-        args: ['--manifest-path', 'pal/pal_pc/Cargo.toml', '--']
-          # TODO: consider enabling clippy
-          # - id: clippy
-          #   name: 'clippy: pal_pc'
-          #   args: ['--manifest-path', 'pal/pal_pc/Cargo.toml', '--', '-D', 'warnings']
-
-  - repo: https://github.com/crate-ci/typos
-    rev: v1.10.2
-    hooks:
-      - id: typos
-
 # cargo is not supported for now in the pre-commit.ci
 # shellcheck uses docker, which is not supported in the pre-commit.ci
 ci:
