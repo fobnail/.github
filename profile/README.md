@@ -7,22 +7,19 @@ offline integrity measurement verifiers on a USB device and validators running
 in dynamically run measured environments (DLME).
 
 Our goal is to create a scalable, flexible implementation that will be the main
-building block of future (community) security solutions based on DRTM payloads.
-The owner of Fobnail can verify the reliability of the working system before
-performing any sensitive operation. Fobnail does not need an internet
-connection, which makes it immune to network stack attacks and remote
-infrastructure.
+building block of future (community) security. The owner of Fobnail can verify
+the reliability of the working system before performing any sensitive operation.
 
-[The Fobnail Token](https://fobnail.3mdeb.com/fobnail_token/) is a small
-open-source USB hardware reference project that allows a
-user/administrator/company to determine system integrity.
+We are using nRF52840 Dongle for a reference implementation of
+[the Fobnail Token](https://fobnail.3mdeb.com/fobnail_token/), to which we
+upload the Fobnail firmware prepared by us.
 
 The Fobnail project has the potential to scale up in the future. The Fobnail
 architecture can be adapted to devices using other buses than USB.
-A detailed description of the project can be found
-[here](https://fobnail.3mdeb.com/).
 
 Fobnail is developed by [3mdeb](https://github.com/3mdeb).
+A detailed description of the project can be found
+[here](https://fobnail.3mdeb.com/).
 
 ## Community importance
 
