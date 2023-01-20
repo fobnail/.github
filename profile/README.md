@@ -30,7 +30,7 @@ We believe that a friendly community and cooperation are key to building
 open-source trustworthy solutions. Because of that, we would like to invite you
 to:
 
-* [Fobnail Matrix Community](https://matrix.to/#/#dasharo:matrix.org) - where we
+* [Fobnail Matrix Community](https://matrix.to/#/#fobnail:matrix.org) - where we
   want to discuss Fobnail, open-source projects and another security mechanism.
 
 ## Our contribution
