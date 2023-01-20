@@ -22,7 +22,7 @@ architecture can be adapted to devices using other buses than USB.
 A detailed description of the project can be found
 [here](https://fobnail.3mdeb.com/).
 
-Fobnail is a product developed by [3mdeb](https://github.com/3mdeb).
+Fobnail is developed by [3mdeb](https://github.com/3mdeb).
 
 ## Community importance
 
