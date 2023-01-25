@@ -1,0 +1,23 @@
+---
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.3.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: check-symlinks
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/jumanjihouse/pre-commit-hooks
+    rev: 2.1.6
+    hooks:
+      - id: shellcheck
+        args: ["--severity=warning"]
+
+# cargo is not supported for now in the pre-commit.ci
+# shellcheck uses docker, which is not supported in the pre-commit.ci
+ci:
+  skip: [shellcheck]
